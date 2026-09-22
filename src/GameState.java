@@ -1,0 +1,3 @@
+public enum GameState {
+    SETUP, CLASS_SELECT, MAP_SELECT, PLAYING, GAME_OVER
+}

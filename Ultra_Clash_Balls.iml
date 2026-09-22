@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar:///Applications/Processing.app/Contents/app/animation-core-desktop-1.9.1-d2678252affd90119d35c260a72a42.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/animation-desktop-1.9.1-419db6b0dd5d8ab84f63fdafac8219a.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/annotation-jvm-1.9.1-1d6a04b3b9847638d0529df8ef76a.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/annotations-23.0.0-8484cd17d040d837983323f760b2c660.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ant-1.10.14-263e0d844d0e4efa54440ec5ed6362a.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ant-launcher-1.10.14-e6c71b2f05383e1fb891e99f5267663.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/antlr-2.7.7-f8f1352c52a4c6a50b59759651fc64.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/antlr-runtime-3.5.3-b5cce1bb9c8190e2e641fc439daa.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/antlr4-4.13.2-307387ba9ce03f1e566b5ce82a121a.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/antlr4-runtime-4.13.2-eecf198f0cfff10f8bb82878b5ca41.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/app-4.5.6-80aaadb1fec9edce20fe7db1dad4e83e.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/atomicfu-jvm-0.23.2-5e4f88ed1c37222d791f5dcadf481498.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/classpath-explorer-1.0-caab34e762a7f05d30ac7d40af90b3ef.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/clikt-jvm-56324132fdbcd27f903c16d7bcfa4b8.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/clikt-mordant-jvm-3c28e5f442b1e2978ce8fbd2f56e541.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/collection-jvm-1.5.0-4421442c114a4f8c8fe587cf2d668237.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/colormath-jvm-6a279b2713acb5c7ffb5e683bf2841.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/compottie-desktop-2.0.0-rc02-5f1edfd67e18f4319b4c781c2b3d1e4.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/core-4.5.6-19622080c6d4508ac4fab8804ad6463a.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/core-common-2.2.0-2212d240dfe1e8a7598ee117ccc316d.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/desktop-jvm-1.9.1-50d7ad53522a4f6df8d72803486e1b7.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/flatlaf-2.4-6481e9fa65e13e28c37547e0fd1dc2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/foundation-desktop-1.9.1-b9dca8cf9c212f6bb4a0aeeafacd5053.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/foundation-layout-desktop-1.9.1-fa023b5793b09dc63185bad0b0c735.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-c322c810fcb0e06334197a33124a26c3.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-android-aarch64-13b3c017ebe77cf5fd57c4fbbc28085.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-android-x86_64-971e2377c278f621998dcc14fc2f2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-freebsd-amd64-943568b9ed210ddc725416577dd4828.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-linux-aarch64-66b113e39da236dd69ea378a9c75bf2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-linux-amd64-2baf6b6fea967e82e29499c2e174d4b.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-linux-armv6hf-1fb0b7ccc5af9db734eab8999bc624f4.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-macosx-universal-5130f4f0912f43c22f245466f553496.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gluegen-rt-2.6.0-natives-windows-amd64-b2fadb3977612876f154595756a03b87.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/gson-2.10.1-df6097815738cb31fc5639155321843.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/icu4j-72.1-b98735702f497dd482638bedc16a1c9.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/java-4.5.6-7d4de67571af0c49517e6799cbb81.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jbr-api-1.5.0-377e771977886f74954db4278394c51.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jna-5.18.1-cb531ec131e1c68c45b5d45fe5b9878.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jna-platform-5.18.1-a7af0779ec98bfe22dfb07b153283d.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-6059cdb774e46389565d20a60b187d5.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-android-aarch64-78a2f22f2ab3e350385137cf698ddeba.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-android-x86_64-eb2f6b06ace957a71619273e53addf0.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-freebsd-amd64-7ef3d5ea4ea2a83d9e1361f4b97e7f2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-linux-aarch64-65ac648d53ebc5e408540f7b5b139dc.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-linux-amd64-4ac24ef53ffbbf98410b1829f7e17ad.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-linux-armv6hf-8bc1be833cb3b0ec4c62f408b6aeb68.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-macosx-universal-10eb2189c82f27e72596f8d72b610f.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jogl-all-2.6.0-natives-windows-amd64-bbc4c96199d065fb14ccdac2bd9194b7.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jsoup-1.17.2-d9dd58c3f8a09f45e57d85e78993be6e.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/jspecify-1.0.0-9133aba420d0ca3b01dbb6ae9992cf6.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kaml-jvm-0.65.0-caacdde133385960325402bb514f5b4.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlin-stdlib-2.3.21-67d962e3bcffbbb88f84b4d49e47fc56.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlin-stdlib-jdk7-2.1.21-4b5377b637f6ef7f833899a93b9862c.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlin-stdlib-jdk8-2.1.21-affbe0196f13ecc7ad85e8d3feb4d96.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlinx-collections-immutable-jvm-0.4.0-8f33105b4925dda1ce211bcb54ab58.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlinx-coroutines-core-jvm-1.8.1-c477c52e713d7633276652efdcaee272.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlinx-datetime-jvm-0.7.1-70b44e22ebc7eebfa53f7d1941af072.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlinx-serialization-core-jvm-1.7.3-58c2ba33122ceccf1b35147f3db945f8.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/kotlinx-serialization-json-jvm-1.7.3-b1f7c0e3bc8e8a591b83ff602cebd0.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/library-desktop-1.9.1-d02fbadac04eb5c576f4168ff640b569.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/library-desktop-1.9.1-ec6ac75c3f25b943b366d9ef2889e9d1.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/lifecycle-common-jvm-2.9.4-6430746dbcfa6c26a0d997b9c76f84c.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/lifecycle-runtime-compose-desktop-2.9.4-8f8fe81afd5ce7cf3e8a38142f8aa2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/lifecycle-runtime-desktop-2.9.4-c2c1ed6e1ecd2d037e07bfe64884c5.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/lifecycle-viewmodel-desktop-2.9.4-df36d8fe3a9c84b3bd8529b166e73d0.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/lifecycle-viewmodel-savedstate-desktop-2.9.4-cf8139ef2d41e155eece234f1b2a358.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/markdown-jvm-0.7.3-26e066c4816f12a82495b8dc3956ff.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/material-desktop-1.9.1-ef4f7f30eb912d39cafe68c241793242.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/material-icons-core-desktop-1.7.3-23eaca5d2a4caa3e4077a0e9fd549d68.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/material-icons-extended-desktop-1.7.3-848bc0f13628d5b3accc94dd3afdfa27.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/material-ripple-desktop-1.9.1-a05436b9f253534340a6cfb4b16dc0aa.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/material3-desktop-1.9.0-e8b6edb91fefebc65537db222e7bd1.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/mordant-jvm-ecfcb267fbc1815841d4512327257.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/mordant-jvm-ffm-jvm-a8f7e217247beafcde93758f11897211.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/mordant-jvm-graal-ffi-jvm-cced8eb5b95de65115f9675c25fce237.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/mordant-jvm-jna-jvm-2248fd1a4a2aba94fa92893ca7bbcea2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/multiplatform-markdown-renderer-jvm-0.37.0-c514c11d6f5349c53420dc823cea65.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/multiplatform-markdown-renderer-m3-jvm-0.37.0-99abad126a6ebfac4d924347847f6b.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/okio-jvm-3.9.1-8017bd41eff99c44380b364e9ad7e5e.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org-netbeans-swing-outline-RELEASE210-2e81ebe8672e9aa7e376158a070c531.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org-openide-util-lookup-RELEASE210-b6628f8a979bddb89412a46996f70d.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org-openide-util-RELEASE210-a06a75bad346dfe496bdcd95fb7a56.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org-openide-util-ui-RELEASE210-fcc076ae4766efbef3467cf368e1715.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.abego.treelayout.core-1.0.3-9c8cefab6360a672565370d5311ff3c.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.commands-3.12.500-78235fb280c0db5ee4b630d71feb8f92.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.contenttype-3.9.800-67d9b9bf0aac720e8791ebc0bbcf2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.expressions-3.9.600-5196fb14741641be26948f3f7be6605c.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.filesystem-1.11.400-15d82423d21c3785ac7f772afa61cf2.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.jobs-3.15.700-15448ccdaaa2336ab38ce1f75d59047.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.resources-3.24.0-f5ef2a271f479d1bfa1584ef7dc.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.core.runtime-3.34.200-414a2b7a38ce5c559cbf458bf5bf159e.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.equinox.app-1.7.600-ed701aba6d95a3ad63a2d11ef35919b3.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.equinox.common-3.20.400-47d4957891d71a7f3db8716f59ce7.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.equinox.preferences-3.12.100-d5b42385fdd65d8e73838357219ec17.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.equinox.registry-3.12.600-782425562cafe452f05522fd8317dd75.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.jdt.compiler.apt-1.3.400-d5cb475f44d15a6484a12f7b2a71489a.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.jdt.core-3.16.0-b1d131b6a0146a5adfb1fc5aede44958.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.lsp4j-0.22.0-ac9dfaf38acd8bc66eeee1c3a01efc30.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.lsp4j.jsonrpc-0.22.0-c7faafbc1e6f2fcb2b814515fea91ce.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.osgi-3.24.200-12aabf51c4e6c5c0e68e1f80ae43e5d.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.eclipse.text-3.14.700-dbaed6f9185fa974bdcd96f168b9678.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/preprocessor-4.5.6-fb622489517947bd4a58a153889b9ff.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/runtime-annotation-jvm-1.9.3-8bc557e47732076f9cbfe7c4a3c7758.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/runtime-desktop-1.9.3-a7ee6ca1965c62fe9b48452d1157d18f.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/runtime-saveable-desktop-1.9.3-a443abf9fac26967173f57e48ded37d.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/savedstate-compose-desktop-1.3.3-a131c55f9df3dce54e7daaa9c7f4d17.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/savedstate-desktop-1.3.3-c3373bc168f837cab12de655ce867a18.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/skiko-awt-0.9.22.2-44467aee8e438a876b17ef652c47bb.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/skiko-awt-runtime-macos-arm64-0.9.22.2-6defa79c3bf7ff64cf4dda39765aae.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/snakeyaml-engine-kmp-jvm-3.0.3-4829f742be22caae1955966deeac2395.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ST4-4.3.4-a6de791d2497d94d2f53047c8db6e1c.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-backhandler-desktop-1.9.1-2cc1baa7ef48c434912aa08b12fb6591.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-desktop-1.9.1-45ddd271e577039e77c1717e8671.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-geometry-desktop-1.9.1-c7591fcc9e4165a8963e1c821a41953.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-graphics-desktop-1.9.1-de371187f39b6da6948cbac4a6c79e19.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-text-desktop-1.9.1-2fcaa74b36edacd73f928d6d63e75d43.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-tooling-preview-desktop-1.9.1-3b90337fd932fe2c688d30de9342c7.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-unit-desktop-1.9.1-62579337a35f625064d0fd1fc675d0e4.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/ui-util-desktop-1.9.1-e7c35a34ec212efe60cc6c6949ef7fd3.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/urlencoder-lib-jvm-1.6.0-ea2ce9469a3f3fc3726e5aeca50e090.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/utils-4.5.6-de5b9c9c8aa8c4c9d76d79201b96c47.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/org.osgi.service.prefs-1.1.2-af897bbdd6af561133c19865a7db4fa.jar!/" />
+          <root url="jar:///Applications/Processing.app/Contents/app/osgi.annotation-8.0.1-4f1508cd76ec6ba527d89148c56d8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar:///Applications/Processing.app/Contents/app/org.osgi.service.prefs-1.1.2-af897bbdd6af561133c19865a7db4fa.jar!/OSGI-OPT/src" />
+          <root url="jar:///Applications/Processing.app/Contents/app/osgi.annotation-8.0.1-4f1508cd76ec6ba527d89148c56d8.jar!/OSGI-OPT/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar:///Applications/Processing.app/Contents/app/resources/core/library/core-4.5.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
