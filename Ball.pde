@@ -57,9 +57,9 @@ public class Ball {
         this.weaponRotationSpeedMult = wStats[1];
     }
 
-    public void takeDamage(float amount) {
+
         health = PApplet.max(0, health - amount);
-    }
+
 
     public boolean canPickUp(int type) {
         if (type == 0) return health < maxHealth;
