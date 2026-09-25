@@ -10,7 +10,7 @@ public class Ball {
     int activeColor;
     int accessoryType;
     int weaponType;
-    int classType;
+    int characterIndex;
 
     float ballRotation = 0;
     float weaponSwingAngle = 0;
@@ -35,26 +35,35 @@ public class Ball {
     int flamethrowerTimer = 0;
     int minigunCooldown = 0;
 
-    public Ball(PApplet p, float x, float y, int activeColor, int accessoryType, int weaponType, int classType) {
+    public Ball(PApplet p, float x, float y, int activeColor, int accessoryType, int weaponType, int characterIndex) {
         this.x = x;
         this.y = y;
         this.activeColor = activeColor;
         this.accessoryType = accessoryType;
         this.weaponType = weaponType;
-        this.classType = classType;
+        this.characterIndex = characterIndex;
         this.weaponSwingTimer = p.random(100);
 
-        // Apply class stats
-        float[] stats = GameConfig.CLASS_STATS[classType];
-        this.maxHealth = stats[0];
-        this.health = stats[0];
-        this.classSpeedMult = stats[1];
-        this.classDamageMult = stats[2];
+        // Apply the class stats attached to this character
+        Character c = GameConfig.CHARACTERS[characterIndex];
+        this.maxHealth = c.health;
+        this.health = c.health;
+        this.classSpeedMult = c.speedMult;
+        this.classDamageMult = c.damageMult;
 
         // Apply weapon stats
         float[] wStats = GameConfig.WEAPON_STATS[weaponType];
         this.weaponDamageMult = wStats[0];
         this.weaponRotationSpeedMult = wStats[1];
+
+        // The two secret "godly" weapons come with a giant reach and a huge health boost.
+        if (weaponType == GameConfig.WEAPON_GODKILLER || weaponType == GameConfig.WEAPON_PLUTON) {
+            this.weaponLength = (weaponType == GameConfig.WEAPON_PLUTON) ? 75 : 55;
+            this.maxHealth += 5000;
+            this.health += 5000;
+        } else if (weaponType == GameConfig.WEAPON_STICK) {
+            this.weaponLength = 22; // a stick is short
+        }
     }
 
     public void takeDamage(float amount) {
@@ -148,8 +157,8 @@ public class Ball {
         return (ddx * ddx + ddy * ddy) <= r * r;
     }
 
-    /** gravity/drag are passed in since they vary per map. */
-    public void update(int width, int height, float gravity, float drag) {
+    /** gravity/drag/wind are passed in since they vary per map. */
+    public void update(int width, int height, float gravity, float drag, float wind) {
         if (speedTimer > 0) {
             speedTimer--;
             if (speedTimer == 0) speedMultiplier = 1.0f;
@@ -179,6 +188,7 @@ public class Ball {
             speedX += (GameConfig.BASE_ACCEL + (holdTimeX * GameConfig.ACCEL_RAMP_RATE)) * speedMultiplier;
         } else {
             holdTimeX = 0;
+            speedX += wind;
             speedX *= drag;
         }
 
@@ -244,11 +254,12 @@ public class Ball {
         p.rotateZ(ballRotation);
         if (paused) p.fill(255, 200, 0);
         else p.fill(activeColor);
-        p.noStroke();
+        p.stroke(0, 100);
         p.strokeWeight(1);
         p.sphere(radius);
 
-        // Render Accessories
+        // Render the character's skin, then accessories on top
+        drawCharacterSkin(p);
         drawAccessory(p);
 
         p.popMatrix();
@@ -272,6 +283,88 @@ public class Ball {
         }
 
         p.popMatrix();
+        p.popMatrix();
+    }
+
+    /** Each character's distinct look, drawn right on the front face of the sphere. */
+    private void drawCharacterSkin(PApplet p) {
+        float radius = GameConfig.RADIUS;
+
+        p.pushMatrix();
+        p.translate(0, 0, radius - 1);
+
+        if (characterIndex == 0) { // Dwarf - braided beard
+            p.noStroke();
+            p.fill(120, 80, 40);
+            p.beginShape();
+            p.vertex(-10, 4);
+            p.vertex(10, 4);
+            p.vertex(6, 20);
+            p.vertex(0, 26);
+            p.vertex(-6, 20);
+            p.endShape(PApplet.CLOSE);
+
+        } else if (characterIndex == 1) { // Mage - arcane sparkle
+            p.stroke(210, 170, 255);
+            p.strokeWeight(2);
+            p.line(-10, 0, 10, 0);
+            p.line(0, -10, 0, 10);
+            p.line(-7, -7, 7, 7);
+            p.line(-7, 7, 7, -7);
+            p.noStroke();
+            p.fill(230, 200, 255);
+            p.ellipse(0, 0, 6, 6);
+
+        } else if (characterIndex == 2) { // Giant - rocky plates
+            p.noStroke();
+            p.fill(90, 70, 55);
+            p.ellipse(-8, -6, 14, 10);
+            p.ellipse(9, -2, 12, 12);
+            p.ellipse(-2, 10, 16, 10);
+
+        } else if (characterIndex == 3) { // Rogue - hood shadow & eye slits
+            p.noStroke();
+            p.fill(20, 20, 25, 210);
+            p.rectMode(PApplet.CENTER);
+            p.rect(0, -8, 34, 18, 12, 12, 4, 4);
+            p.fill(230, 230, 255);
+            p.rect(-6, -8, 6, 2);
+            p.rect(6, -8, 6, 2);
+
+        } else if (characterIndex == 4) { // Paladin - golden cross emblem
+            p.noStroke();
+            p.fill(255, 215, 0);
+            p.rectMode(PApplet.CENTER);
+            p.rect(0, 0, 6, 22);
+            p.rect(0, 0, 22, 6);
+
+        } else if (characterIndex == 5) { // Berserker - war-paint stripes
+            p.stroke(200, 20, 20);
+            p.strokeWeight(4);
+            p.line(-12, -12, 12, 12);
+            p.line(-4, -14, 14, 4);
+
+        } else if (characterIndex == 6) { // Knight - plated armor lines
+            p.noFill();
+            p.stroke(210);
+            p.strokeWeight(2);
+            p.line(-14, -6, 14, -6);
+            p.line(-14, 4, 14, 4);
+            p.line(-14, 14, 14, 14);
+            p.noStroke();
+            p.fill(160);
+            p.ellipse(-14, -6, 3, 3);
+            p.ellipse(14, 4, 3, 3);
+
+        } else if (characterIndex == 7) { // Archer - quiver strap
+            p.stroke(60, 110, 60);
+            p.strokeWeight(5);
+            p.line(-14, -14, 14, 14);
+            p.noStroke();
+            p.fill(90, 140, 90);
+            p.triangle(10, 10, 18, 10, 14, 18);
+        }
+
         p.popMatrix();
     }
 
@@ -437,6 +530,56 @@ public class Ball {
             p.box(6, 15, 6);
             p.popMatrix();
             p.popMatrix();
+
+        } else if (weaponType == GameConfig.WEAPON_GODKILLER) { // The Godkiller - white blade, gold glow
+            p.noStroke();
+            p.fill(255, 215, 0, 70);
+            p.ellipse(radius + weaponLength * 0.55f, 0, weaponLength * 1.3f, 26);
+            p.fill(255, 230, 120, 90);
+            p.ellipse(radius + weaponLength * 0.55f, 0, weaponLength * 0.9f, 16);
+
+            p.stroke(120, 90, 20);
+            p.strokeWeight(5);
+            p.line(radius, 0, 0, radius + 10, 0, 0);
+
+            p.pushMatrix();
+            p.translate(radius + 10, 0, 0);
+            p.fill(255, 255, 250);
+            p.stroke(255, 215, 0);
+            p.strokeWeight(2);
+            p.beginShape();
+            p.vertex(0, -3);
+            p.vertex(weaponLength - 5, -5);
+            p.vertex(weaponLength + 8, 0);
+            p.vertex(weaponLength - 5, 5);
+            p.vertex(0, 3);
+            p.endShape(PApplet.CLOSE);
+            p.popMatrix();
+
+        } else if (weaponType == GameConfig.WEAPON_PLUTON) { // Pluton - a giant sword
+            p.stroke(70, 70, 80);
+            p.strokeWeight(8);
+            p.line(radius, 0, 0, radius + 15, 0, 0);
+
+            p.pushMatrix();
+            p.translate(radius + 15, 0, 0);
+            if (dmgTimer > 0) p.fill(255, 80, 80);
+            else p.fill(190, 195, 205);
+            p.stroke(110);
+            p.strokeWeight(2);
+            p.beginShape();
+            p.vertex(0, -10);
+            p.vertex(weaponLength - 10, -14);
+            p.vertex(weaponLength + 12, 0);
+            p.vertex(weaponLength - 10, 14);
+            p.vertex(0, 10);
+            p.endShape(PApplet.CLOSE);
+            p.popMatrix();
+
+        } else if (weaponType == GameConfig.WEAPON_STICK) { // The Stick - a joke weapon
+            p.stroke(120, 85, 45);
+            p.strokeWeight(3);
+            p.line(radius, 0, 0, radius + weaponLength, 0, 0);
         }
     }
 }

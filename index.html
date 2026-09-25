@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Processing Game</title>
-    <!-- Loads the Processing library into the browser -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Ball Arena</title>
+
+    <!-- 1. p5.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+    <!-- 2. Enums and Game Configuration -->
+    <script src="GameState.js"></script>
+    <script src="GameConfig.js"></script>
+
+    <!-- 3. Entities & Map Builders -->
+    <script src="LavaZone.js"></script>
+    <script src="PowerUp.js"></script>
+    <script src="Bullet.js"></script>
+    <script src="Tree.js"></script>
+    <script src="MapBuilder.js"></script>
+
+    <!-- 4. Player & Ball Mechanics -->
+    <script src="Ball.js"></script>
+
+    <!-- 5. Main Game Loop -->
+    <script src="sketch.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+    </style>
 </head>
 <body>
-<h1>UltraClashBalls</h1>
-<!-- Tells Processing to run your sketch.pde file inside this canvas -->
-<canvas data-processing-sources="sketch.pde GameConfig.pde LavaZone.pde MapBuilder.pde PowerUp.pde Tree.pde GameState.pde Bullet.pde Ball.pde"></canvas>
 </body>
 </html>

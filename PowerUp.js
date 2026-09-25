@@ -1,44 +1,43 @@
-class PowerUp {
-    float x, y;
-    int type;
-    float size = 24;
-    float pulse = 0;
+/* global p5, Ball, GameConfig */
 
-    PowerUp(float x, float y, int type) {
+class PowerUp {
+    constructor(x, y, type) {
         this.x = x;
         this.y = y;
         this.type = type;
+        this.size = 24;
+        this.pulse = 0;
     }
 
-    void update() {
-        pulse += 0.05;
+    update() {
+        this.pulse += 0.05;
     }
 
-    boolean checkCollision(Ball b) {
-        if (dist(x, y, b.x, b.y) < GameConfig.RADIUS + size / 2) {
-            if (b.canPickUp(type)) {
-                b.applyPowerUp(type);
+    checkCollision(b) {
+        if (dist(this.x, this.y, b.x, b.y) < GameConfig.RADIUS + this.size / 2) {
+            if (b.canPickUp(this.type)) {
+                b.applyPowerUp(this.type);
                 return true;
             }
         }
         return false;
     }
 
-    void draw() {
-        pushMatrix();
-        translate(x, y);
+    draw() {
+        push();
+        translate(this.x, this.y, 0);
 
-        float scaleFactor = 1.0 + sin(pulse) * 0.15;
+        const scaleFactor = 1.0 + sin(this.pulse) * 0.15;
         scale(scaleFactor);
 
-        if (type == 0) { // Heal
+        if (this.type === 0) { // Heal (Green Cross)
             fill(0, 230, 80);
             stroke(255);
             strokeWeight(2);
             rectMode(CENTER);
             rect(0, 0, 8, 26, 3);
             rect(0, 0, 26, 8, 3);
-        } else if (type == 1) { // Speed Boost
+        } else if (this.type === 1) { // Speed Boost (Boot)
             fill(255, 220, 0);
             stroke(0);
             strokeWeight(1.5);
@@ -53,7 +52,7 @@ class PowerUp {
             fill(200, 170, 0);
             rectMode(CORNER);
             rect(-10, 8, 20, 3);
-        } else if (type == 2) { // Damage Boost
+        } else if (this.type === 2) { // Damage Boost (Fist)
             fill(230, 40, 40);
             stroke(0);
             strokeWeight(1.5);
@@ -64,7 +63,7 @@ class PowerUp {
             ellipse(2, -6, 5, 6);
             ellipse(6, -5, 5, 6);
             ellipse(8, 3, 6, 8);
-        } else if (type == 3) { // Flamethrower
+        } else if (this.type === 3) { // Flamethrower (Flame)
             stroke(255, 120, 0);
             strokeWeight(1);
             fill(255, 120, 0);
@@ -84,6 +83,6 @@ class PowerUp {
             endShape(CLOSE);
         }
 
-        popMatrix();
+        pop();
     }
 }
